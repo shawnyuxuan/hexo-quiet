@@ -1,6 +1,5 @@
-
 <% if(is_archive()){ %>
-    <% page.title = __('文章归档') %>
+    <% page.title = __('Archive') %>
     <%- partial('_partial/header',{name:'archive'}) %>
     <%
         var years = {};
@@ -17,7 +16,7 @@
         });
     %>
 <% }else if(is_category()){ %>
-    <% page.title = __("文章分类：" + page.category) %>
+    <% page.title = __("Category: " + page.category) %>
     <%- partial('_partial/header',{name:'categories'}) %>
     <%
         var years = {};
@@ -42,7 +41,7 @@
     <% if(is_archive()){ %>
         <%- partial('_widget/header_body',{message:theme.headers.archives.message.replace('year', PageYear).replace('number', PageNum),icon:theme.headers.archives.icon}) %>
     <% }else if(is_category()){%>
-        <%- partial('_widget/header_body',{message:"文章分类："+page.category,icon:theme.headers.categories.icon}) %>
+        <%- partial('_widget/header_body',{message:"Category: "+page.category,icon:theme.headers.categories.icon}) %>
     <% } %>
     <div class="archive-content" id="content">
         <div class="archive-content-data">

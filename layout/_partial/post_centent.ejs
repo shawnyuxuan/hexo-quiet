@@ -1,5 +1,5 @@
 <div class="post-content" id="content">
-  
+  <script import="md5" src="https://blog.s0ra.cc/js/md5.js"></script>
   <div id="article" class="post-content-info">
     <% if( page.toc ){ %>
       <div id="post-toc">
@@ -42,6 +42,12 @@ Fancybox.bind('[data-fancybox="fancybox-gallery-img"]', {
 </script>
 
 <style>
+    #content {
+        background-image: url('/image/default_pattern.png');
+        background-repeat: repeat-y;
+        background-position: center;
+    }
+
     #noneimg img {
         display: none;
         z-index: 9999;

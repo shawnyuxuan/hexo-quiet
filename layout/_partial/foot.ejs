@@ -1,21 +1,40 @@
 
 <div class="footer">
 	<div class="Copyright">
-		©<%= new Date().getFullYear() %> By <%- theme.author %>. 主题：<a
-			style="text-decoration: none;display: contents; color: #898F9F;"
-			href="https://github.com/79e/hexo-theme-quiet">Quiet</a>
+		Powered by Museum 16. ©<%= new Date().getFullYear() %> By <%- theme.author %>.
 	</div>
 	<div class="contact">
 		<% theme.bottomIcon.forEach(item =>{%>
 		<a href="<%= item.toUrl %>">
-			<img src="<%= item.iconLink %>" alt="Quiet主题">
+			<img src="<%= item.iconLink %>">
 		</a>
 		<% }) %>
+		<div>
+			<!-- <a href="https://blog.s0ra.cc/atom.xml" class="rss-subscribe-button">
+				<img src="https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/rss-512.png">
+				<style>
+					.rss-subscribe-button button {
+						width: 30px;
+						height: 30px;
+						background-color: rgba(255, 255, 255, 0);
+						border: none;
+						cursor: pointer;
+						display: flex;
+						align-items: center;
+						/* background-image: url('https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/rss-512.png');
+						background-size: 30px 30px;
+						background-repeat: no-repeat;*/
+					}
+				</style>
+			</a> -->
+		</div>
 	</div>
 </div>
+
+
 <%- partial('_widget/gotop') %>
 <%- partial('_widget/analytics')  %>
 <%- partial('_widget/comment')  %>
-<script>
+<!-- <script>
 	console.log('\n %c Hexo-Quiet 主题 %c https://github.com/79e/hexo-theme-quiet \n', 'color: #fadfa3; background: #030307; padding:5px 0;', 'background: #fadfa3; padding:5px 0;')
-</script>
+</script> -->
