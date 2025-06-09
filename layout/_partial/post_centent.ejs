@@ -40,6 +40,20 @@ Fancybox.bind('[data-fancybox="fancybox-gallery-img"]', {
   },
 });
 </script>
+<script>
+window.onload = function addAnchor() {
+  var titles = document.getElementsByTagNameNS("http://www.w3.org/1999/xhtml","h2");
+  for (var i = 0; i < titles.length; i++) {
+    var title = titles[i];
+    var titleText = title.textContent;
+    var anchor = document.createElement('a');
+    anchor.innerText = " #";
+    anchor.href = "#"+titleText.replace(/ /g,"-");
+    anchor.style = "color:gray";
+    title.appendChild(anchor);
+  }
+}
+</script>
 
 <style>
     #content {
