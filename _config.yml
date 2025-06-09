@@ -30,7 +30,7 @@ menus:
 # logo
 logo: /image/hku2.png
 # 网页标签上那个小图标 一定要用本地存储
-icon: /image/favicon.ico
+# icon: /image/favicon.ico
 # 每个页面的展示的图标和一句话
 headers:
     home: {
